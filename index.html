@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JMK (Jaya Mbako) - Tembakau Tingwe Lengkap</title>
+  <meta name="description" content="Tembakau Um Ismail - Tembakau asli dari petani Telagasana, Mundu, Cirebon. Dijual oleh Diya Hasbu. Tembakau tingwe kering alami, wangi, tidak panas. Juga tersedia layanan pijat refleksi dan relaksasi keliling.">
+  <meta name="keywords" content="tembakau tingwe asli, tembakau murah Telagasana, tembakau Mundu, tembakau Diya Hasbu, Tembakau Um Ismail, pijat keliling Telagasana, tembakau asli Cirebon, tembakau wangi tidak panas, pijat Diya Hasbu, tembakau dan pijat, tembakau tradisional Telagasana Mundu">
+  <meta name="author" content="Tembakau Um Ismail">
+  <meta name="robots" content="index, follow" />
+  <style>
+  
+    :root {
+      --nav-height: 70px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff8f0;
+      color: #333;
+    }
+
+    nav {
+      background-color: #4e342e;
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      font-weight: bold;
+      transition: background 0.3s;
+      display: inline-block;
+    }
+
+    nav a.active,
+    nav a:hover {
+      background: #6d4c41;
+      border-radius: 5px;
+    }
+
+    header {
+      background: #6d4c41;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      scroll-margin-top: var(--nav-height);
+    }
+
+    section {
+      padding: 50px 20px;
+      scroll-margin-top: var(--nav-height);
+    }
+
+.alamat {
+      color: #f9d56e;
+    }
+
+
+    /* LOGO JMK */
+    .logo {
+      font-size: 50px;
+      font-weight: bold;
+      color: #ffffff;
+      background-color: #201c15;
+      padding: 0px 10px;
+      display: inline-block;
+      border-radius: 15px;
+      border-bottom: 4px solid #f9d56e;
+      box-shadow: 0 0 10px #f9d56e;
+    }
+
+    .jaya {
+      background: linear-gradient(to bottom, #2c1a0e, #1a0e05);
+      padding: 60px 20px;
+      text-align: center;
+      border-bottom: 2px solid #725e8be2; /* Diperbaiki */
+    }
+
+    /* Judul utama */
+    .judul-jaya {
+      font-size: 50px;
+      font-weight: bold;
+      font-family: 'Georgia', serif;
+      background: linear-gradient(90deg, #fff, #f63f3f, #80f3c6d8, #ffcc00, #fff);
+      background-size: 200%;
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      animation: sinar-berjalan 3s linear infinite;
+      margin: 5px 0;
+      letter-spacing: 2px;
+    }
+
+    @keyframes sinar-berjalan {
+      0% {
+        background-position: 200% 0;
+      }
+      100% {
+        background-position: -200% 0;
+      }
+    }
+
+   
+       .promo {
+      color: #fff;
+      margin-top: 20px;
+      line-height: 1.6;
+      text-align: center;
+      padding: 20px;
+      background-color: #201c15;
+    }
+
+    .highlight {
+      color: #f9d56e;
+      font-weight: bold;
+    }
+   
+.gambar-wrapper {
+  width: 100%;
+  padding: 5% 0px; /* <- Tambahkan baris ini */
+}
+
+.gambar {
+  width: 100%;
+  max-width: 1000px; /* tambah lebar dari 500px jadi 800px */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.15s ease;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.produk-item {
+  display: flex;
+  align-items: flex-start;
+  background-color: #fff8f0;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-left: 5px solid #6d4c41;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  gap: 15px;
+}
+
+.produk-item img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #eee;
+  flex-shrink: 0;
+}
+
+.produk-item .deskripsi {
+  flex: 1;
+}
+
+.produk-item h3 {
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #4e342e;
+}
+
+.penutup-produk {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #6d4c41;
+  text-align: center;
+}
+
+    .gallery img {
+      width: 100%;
+      max-width: 400px;
+      margin: 10px;
+      border-radius: 10px;
+    }
+    
+    
+
+    footer {
+      background: #4e342e;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    /* Responsif HP */
+    @media (max-width: 480px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav a {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+      }
+    }
+    
+    .kontak-container {
+  text-align: center;
+}
+
+.kontak-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 15px auto;
+  max-width: 400px;
+  padding: 10px;
+  background-color: #fff3e0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.kontak-item img {
+  width: 32px;
+  height: 32px;
+}
+
+.kontak-item a {
+  color: #4e342e;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.kontak-item a:hover {
+  color: #f57c00;
+}
+    /* Animasi goyang */
+@keyframes shake {
+  0% { transform: translate(0, 0); }
+  20% { transform: translate(-5px, 0); }
+  40% { transform: translate(5px, 0); }
+  60% { transform: translate(-5px, 0); }
+  80% { transform: translate(5px, 0); }
+  100% { transform: translate(0, 0); }
+}
+
+/* Saat gambar diklik */
+img.clicked {
+  animation: shake 0.5s;
+}
+    
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#home" class="nav-link active">Home</a>
+    <a href="#produk" class="nav-link">Produk</a>
+    <a href="#gallery" class="nav-link">Galeri</a>
+    <a href="#contact" class="nav-link">Kontak</a>
+    <a href="#about" class="nav-link">Tentang</a>
+  </nav>
+
+<div class="jaya" id="home">
+  <div class="logo">JMK</div>
+  <h1 class="judul-jaya">Jaya Mbako</h1>
+  <p class="alamat">Tembakau Tingwe Lengkap - Ds Telagasana, Dk Mundong</p>
+  
+    <p class="promo">
+    Spesial buat kamu yang suka ngebul tapi terhalang harga rokok yang meroket!<br/>
+    Jangan khawatir, <strong>JMK (Jaya Mbako)</strong> punya solusinya!<br/>
+    <span class="highlight">Datang ke toko kami dan GRATIS coba semua varian tembakau best seller!</span><br/>
+    Tembakau berkualitas, tanpa bikin kantongan habis!
+  </p>
+
+<section class="gambar-wrapper">
+  <img src="pilihanRoko.png" alt="varian rasa" class="gambar">
+</section>
+  
+</div>
+
+<section id="produk" class="produk">
+  <h2>Varian Tembakau & Produk Lainnya</h2>
+
+  <div class="produk-item">
+    <img src="likuit.jpg" alt="Likuit">
+    <div class="deskripsi">
+      <h3>Likuit Wangi</h3>
+      <p>Aroma khas yang lembut dan menenangkan, cocok untuk anak muda.</p>
+    </div>
+  </div>
+
+  <div class="produk-item">
+    <img src="bri.png" alt="Tembakau Medium">
+    <div class="deskripsi">
+      <h3>Tembakau Medium</h3>
+      <p>Rasa sedang dan seimbang, pas untuk penggunaan harian tanpa berlebihan.</p>
+    </div>
+  </div>
+
+  <div class="produk-item">
+    <img src="tembakau-kuat.png" alt="Tembakau Kuat">
+    <div class="deskripsi">
+      <h3>Tembakau Kuat</h3>
+      <p>Sensasi mantap dan tegas, cocok bagi perokok veteran yang menyukai rasa kuat.</p>
+    </div>
+  </div>
+
+  <div class="produk-item">
+    <img src="kertas_linting.jpg" alt="Kertas Linting">
+    <div class="deskripsi">
+      <h3>Kertas Linting</h3>
+      <p>Kertas tipis, rasa-rasa unik, dan varian model rokokan – semua lengkap di sini.</p>
+    </div>
+  </div>
+
+  <div class="produk-item">
+    <img src="filter-korek.png" alt="Filter dan Korek">
+    <div class="deskripsi">
+      <h3>Filter & Korek</h3>
+      <p>Filter bolong, filter mini, korek api gas dan api besar. Semua ada!</p>
+    </div>
+  </div>
+
+  <p class="penutup-produk">
+    Semua produk <strong>kering alami</strong>, dikemas rapi, dan siap kirim ke seluruh Indonesia!
+  </p>
+</section>
+
+<section class="produk">
+  <h3>Kertas Linting</h3>
+  <p>Berbagai varian kertas linting dari model rokok-rokokan hingga rasa-rasa unik.</p>
+</section>
+
+<section id="gallery" class="gallery">
+  <h3>Galeri Produk</h3>
+  <p>Beberapa tampilan produk dan elemen visual pendukung usaha kami.</p>
+  <img src="rak_tembako.png" alt="Logo BRI untuk pembayaran">
+    <img src="likuit.jpg" alt="Foto produk likuit">
+  <img src="jmk.png" alt="Ikon Facebook untuk media sosial">
+</section>
+
+<section id="contact" class="contact">
+  <div class="kontak-container">
+    <h1>Kontak Jaya Mbako</h1>
+
+    <!-- Kontak Media Sosial -->
+    <div class="kontak-item">
+      <img src="whatsapp.png" alt="WhatsApp">
+      <a href="https://wa.me/6285283907654?text=Halo%20Mas%20Hasbu%2C%20aku%20mau%20beli%20tembako" target="_blank">
+        WhatsApp: 0852‑8390‑7654
+      </a>
+    </div>
+    <div class="kontak-item">
+      <img src="facebook.png" alt="Facebook">
+      <a href="https://www.facebook.com/share/1FkXCsmney/" target="_blank">
+        Facebook: jaya mbako
+      </a>
+    </div>
+    <div class="kontak-item">
+      <img src="instagram.png" alt="Instagram">
+      <a href="https://www.instagram.com/khasbu.jaya" target="_blank">
+        Instagram: @hasbu.jaya
+      </a>
+    </div>
+
+<!-- Peta Lokasi -->
+<div class="kontak-item">
+  <h3>Lokasi Kami</h3>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.610947956963!2d109.3375986!3d-7.724804599999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e654125d4d865e5%3A0x623008c1830c7a4f!2sMundong%2C%20Tlagasana%2C%20Watukumpul%2C%20Pemalang%20Regency%2C%20Central%20Java%2052357!5e0!3m2!1sen!2sid!4v1718357628352!5m2!1sen!2sid"
+    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+  </div>
+</section>
+
+<section id="about" class="about">
+  <h2>Tentang Kami</h2>
+
+  <p>
+    <span style="color:green;"><strong>1. Di Bidang Bangunan</strong></span><br>
+    Kami aktif di dunia jasa konstruksi. Dengan pengalaman bertahun-tahun dalam menangani proyek pembangunan rumah, renovasi, pemasangan keramik, dan pekerjaan borongan lainnya, kami menerima sistem kerja yang fleksibel, rapi, dan terpercaya.
+  </p>
+
+  <p>
+    <span style="color:green;"><strong>2. Jualan di Desa</strong></span><br>
+    <strong>Jaya Mbako</strong> adalah usaha rumahan yang berlokasi di Desa Telagasana, Mundong, Watukumpul. Kami fokus menyediakan tembakau rajangan berkualitas untuk para pecinta lintingan tradisional (tingwe). Tembakau kami diolah secara alami, kering, tidak panas di tenggorokan, dan memiliki aroma khas yang disukai banyak pelanggan. Cocok untuk dinikmati sendiri maupun dijual kembali.
+  </p>
+
+  <p>
+    <span style="color:green;"><strong>3. Perlengkapan Lintingan</strong></span><br>
+    Selain tembakau, kami juga menjual perlengkapan linting seperti kertas rokok, filter, dan cengkeh rajangan yang siap pakai. Semua produk kami cocok untuk para perokok lintingan sejati yang mengutamakan rasa dan kualitas.
+  </p>
+
+  <p>
+    <span style="color:green;"><strong>4. Peran Keluarga</strong></span><br>
+    Karena saya juga aktif merantau untuk mengerjakan proyek-proyek di luar kota, istri saya yang mengelola usaha di rumah. Beliau melayani pelanggan, menjaga stok, dan memastikan pengiriman tembakau tetap lancar. Kami juga rutin mengirim tembakau ke lokasi proyek sebagai bekal untuk para pekerja.
+  </p>
+
+  <p>
+    <span style="color:green;"><strong>5. Nilai Usaha</strong></span><br>
+    Kami percaya bahwa kerja jujur, hasil rapi, dan komunikasi yang baik adalah kunci utama dalam membangun kepercayaan pelanggan. Baik dalam urusan tembakau maupun proyek bangunan, kami selalu mengutamakan kualitas dan ketepatan waktu.
+  </p>
+
+  <p>
+    <span style="color:green;"><strong>6. Siap Melayani</strong></span><br>
+    Dengan semangat kerja keras dan inovasi dari desa, kami siap melayani Anda – baik untuk kebutuhan tingwe harian maupun pembangunan rumah. Silakan hubungi kami dan mari bekerja sama untuk saling menguatkan ekonomi rakyat!
+  </p>
+</section>
+
+  <footer>
+    <p>&copy; 2025 Jaya Mbako - khasbu hairi</p>
+  </footer>
+
+  <script>
+    const navHeight = document.querySelector('nav').offsetHeight;
+
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          const offsetTop = targetElement.offsetTop - navHeight;
+
+          window.scrollTo({
+            top: offsetTop,
+            behavior: 'smooth'
+          });
+
+          // Update active link
+          document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+          this.classList.add('active');
+        }
+      });
+    });
+
+    // Update active nav on back/forward
+    window.addEventListener("popstate", () => {
+      const hash = location.hash || "#home";
+      document.querySelectorAll(".nav-link").forEach(link => {
+        link.classList.toggle("active", link.getAttribute("href") === hash);
+      });
+    });
+
+  // Pilih semua gambar di halaman
+  const allImages = document.querySelectorAll('img');
+
+  // Fungsi untuk memicu animasi
+  function animateShake(img) {
+    img.classList.add('clicked');
+    setTimeout(() => {
+      img.classList.remove('clicked');
+    }, 500);
+  }
+
+  allImages.forEach(img => {
+    img.addEventListener('mouseover', () => animateShake(img));   // untuk mouse
+    img.addEventListener('touchstart', () => animateShake(img));  // untuk sentuhan HP
+  });
+
+    
+  </script>
+</body>
+</html>
