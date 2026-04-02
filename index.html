@@ -247,6 +247,45 @@
   transition: color 0.3s;
 }
 
+.map-container {
+  max-width: 500px;      /* batas lebar biar tidak terlalu besar */
+  margin: 30px auto;     /* tengah + jarak atas bawah */
+  text-align: center;
+}
+
+.map-container h3 {
+  margin-bottom: 10px;
+  color: #4e342e;
+}
+
+.map-container iframe {
+  width: 100%;           /* full lebar */
+  height: 300px;
+  border: none;
+  border-radius: 10px;   /* biar agak bulat */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* bayangan */
+}
+
+/* Tombol Google Maps */
+.map-container a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #4e342e;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.map-container a:hover {
+  background-color: #6d4c41;
+}
+.map-container iframe:hover {
+  transform: scale(1.02);
+  transition: 0.3s;
+}
+
 .kontak-item a:hover {
   color: #f57c00;
 }
@@ -389,13 +428,24 @@ img.clicked {
     </div>
 
 <!-- Peta Lokasi -->
-<div class="kontak-item">
-  <h3>Lokasi Kami</h3>
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.610947956963!2d109.3375986!3d-7.724804599999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e654125d4d865e5%3A0x623008c1830c7a4f!2sMundong%2C%20Tlagasana%2C%20Watukumpul%2C%20Pemalang%20Regency%2C%20Central%20Java%2052357!5e0!3m2!1sen!2sid!4v1718357628352!5m2!1sen!2sid"
-    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade">
-  </iframe>
+</div> <!-- tutup kontak-container -->
+
+<!-- MAP -->
+<div class="map-container">
+  <h3>📍 Lokasi Kami</h3>
+
+<iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.610947956963!3d-7.1879421!2d109.5138461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6ffd1814623fbf%3A0xfd0cd894c6bd314e!2sKhasbu%20mbako!5e0!3m2!1sid!2sid!4v1710000000000!5m2!1sid!2sid"
+  width="100%"
+  height="300"
+  style="border:0;"
+  allowfullscreen>
+</iframe>
+
+  <a href="https://www.google.com/maps/place/Khasbu+mbako/@-7.1879334,109.513742,20z"
+     target="_blank">
+     📌 Buka di Google Maps
+  </a>
 </div>
 
   </div>
